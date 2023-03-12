@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
 
   function handleNameClick (e: React.FormEvent): void {
     e.preventDefault();
-    const name: string | undefined = nameRef?.current?.value;
+    const name: string | null = nameRef?.current?.value ?? null;
 
     if (name) { alert(`Hello ${name}`); } else { alert('I don\'t even know who you are..'); }
   };

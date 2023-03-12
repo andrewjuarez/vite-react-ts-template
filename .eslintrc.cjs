@@ -36,7 +36,8 @@ module.exports = {
         'tsx': 'never'
       },
     ],
-    'jsx-quotes': ['error', 'prefer-single']
+    'jsx-quotes': ['error', 'prefer-single'],
+    '@typescript-eslint/strict-boolean-expressions': 'warn'
   },
   settings: {
     'import/resolver': {
